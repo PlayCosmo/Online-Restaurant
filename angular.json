@@ -14,8 +14,8 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "allowedCommonJsDependencies": [
-        "lodash"
-        ],
+              "lodash"
+            ],
             "outputPath": "dist/online-restaurant",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -97,8 +97,6 @@
             "scripts": []
           }
         }
-    
-    
       }
     }
   }
