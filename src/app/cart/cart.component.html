@@ -1,0 +1,57 @@
+
+<section class="table  p-3" style="background: linear-gradient(180deg, white,gray);">
+    <h1 class="text-center">Cart</h1>
+<hr>
+<table class="w-100 p-5 table-bordered">
+    <thead>
+        <tr class="p-3">
+            <th class="col"></th>
+            <th class="col-6 text-center">Product</th>
+            <th class="col-2 text-center">Qty</th>
+            <th class="col-2 text-center">Price</th>
+            <th class="col-2 text-center">Total</th>
+        </tr>
+    </thead>
+  
+    <tbody>
+        @for (item of products; track $index) {
+        <tr>
+            <td class="d-flex justify-content-center align-items-center">
+                <div class="d-flex gap-3 flex-column p-4">
+                <i class="fa-solid fa-xmark" (click)="deleteProduct(item)"></i>  
+                <i class="fa-solid fa-pencil"></i>
+            </div>
+            </td>
+            <td >
+                <div class="d-flex gap-2  p-3">
+                <img [src]="item.product.image" width="50" >
+                <p class="mt-2">{{item.product.name}}</p>
+                 </div>
+            </td>
+            <td class="text-center ">
+                <div class="clear">
+                <button class="btn plus" (click)="plus(item)">+</button>
+                <span class="me-2 ms-2">{{item.quantity}}</span>
+                <button class="btn minus" (click)="minus(item)">-</button>
+            </div>
+            </td>
+            <td class="text-center" >
+                <span>{{item.product.price | currency}}</span>
+            </td>
+            <td class="text-center">
+                <span>{{item.price* item.quantity | currency}}</span>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<hr>
+<div class="d-flex justify-content-end col-10 mt-5" >
+<h1>Total: <span class="w-100" style="width:20%">{{total | currency}}</span></h1>
+</div>
+<div class="d-flex justify-content-end col-10 mt-5">
+<button class="btn btn-success w-25">Checkout</button>
+</div>
+</section>
+

@@ -1,0 +1,36 @@
+.fa-xmark:hover
+{
+color:red;
+cursor: pointer;
+}
+
+.plus
+{
+    background-color: rgb(168, 212, 168);
+    color: white;
+    transition: 0.6s;
+}
+.plus:hover
+{
+    background-color: green;
+}
+.minus
+{
+    background-color: rgb(231, 110, 110);
+    color:white;
+    transition: 0.6s;
+}
+.minus:hover
+{
+    background-color: red;;
+}
+tr:hover
+{
+    background-color: gray;
+}
+
+@media screen and (max-width:768px) {
+ .nav-link{
+    color:black !important;
+ }
+}

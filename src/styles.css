@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+   
+ 
+}
+body
+{
+    background-image: url(https://i.pinimg.com/564x/e7/1b/cc/e71bccf2fd56f7119b8a2d75581288ab.jpg);
+    object-fit:contain;
+  
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

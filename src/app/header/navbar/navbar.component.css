@@ -1,0 +1,16 @@
+.nav-link{
+    font-size: 20px;
+    cursor: pointer;
+}
+.nav-link:hover{
+
+    color: pink !important;
+}
+
+@media screen and (max-width:768px) {
+    .clear
+    {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
