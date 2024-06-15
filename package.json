@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "predeploy": "ng build --configuration production --base-href 'https://playcosmo.github.io/Online-Restaurant/'",
+    "predeploy": "ng build --configuration production --base-href '/Online-Restaurant/'",
     "deploy": "gh-pages -d dist/online-restaurant" 
   },
   "private": true,

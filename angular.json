@@ -16,7 +16,7 @@
             "allowedCommonJsDependencies": [
               "lodash"
             ],
-            "outputPath": "dist/online-restaurant/browser/",
+            "outputPath": "dist/online-restaurant/",
             "baseHref": "/Online-Restaurant/",
             "index": "src/index.html",
             "browser": "src/main.ts",
