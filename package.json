@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "predeploy": "ng build --configuration production --base-href '/Online-Restaurant/'",
-    "deploy": "gh-pages -d dist/online-restaurant" 
+    "deploy": "gh-pages -d dist/online-restaurant -b new-branch"
   },
   "private": true,
   "dependencies": {
