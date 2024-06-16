@@ -11,18 +11,13 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:application",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "allowedCommonJsDependencies": [
-              "lodash"
-            ],
-            "outputPath": "dist/online-restaurant/",
-            "baseHref": "/Online-Restaurant/",
+            "allowedCommonJsDependencies": ["lodash"],
+            "outputPath": "dist/online-restaurant",
             "index": "src/index.html",
-            "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "main": "src/main.ts",
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
@@ -36,7 +31,8 @@
               "node_modules/ngx-spinner/animations/ball-scale-multiple.css",
               "node_modules/ngx-spinner/animations/ball-spin.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "baseHref": "/Online-Restaurant/"
           },
           "configurations": {
             "production": {
@@ -64,6 +60,9 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "buildTarget": "online-restaurant:build"
+          },
           "configurations": {
             "production": {
               "buildTarget": "online-restaurant:build:production"
@@ -80,10 +79,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               {
